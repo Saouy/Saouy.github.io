@@ -1,0 +1,37 @@
+h1{
+    text-align: center;
+    background-color: cadetblue;
+}
+.formgroup {
+    display: flex;
+    align-items: center; 
+    margin-bottom: 20px; 
+    align-items: flex-start;
+}
+
+.formgroup label {
+    width: 100px; 
+    margin-right: 10px; 
+}
+
+.formgroup input[type="text"],
+.formgroup input[type="email"] {
+    flex-grow: 1; 
+    height: 40px; 
+}
+
+.formgroup input[type="text"].text2{
+    flex-grow: 1; 
+    height: 200px; 
+}
+
+.formgroup0 {
+    display: flex;
+    align-items: center; 
+    margin-bottom: 20px; 
+    align-items: flex-start;
+    margin-left: 50%;
+}
+.formgroup0 input {
+    margin-right: 10px;
+}

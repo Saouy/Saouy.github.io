@@ -1,0 +1,16 @@
+body {
+  height: 3840;
+  width: 2160;
+  background: url(image/4.jpg);
+}
+.box h1 {
+  display: block;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  background-color: rgb(116, 90, 56);
+}
+p {
+  text-indent: 2em;
+  line-height: 1.5;
+}

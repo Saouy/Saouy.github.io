@@ -1,0 +1,36 @@
+.tooltip{
+    display: inline-block;
+    position: relative;
+}
+.hover-target {
+    cursor: pointer; 
+    color: blue; 
+    display: inline-block;
+    position: relative;
+    text-decoration: none
+}
+
+
+.hover-target:hover {
+    text-decoration: underline; 
+    text-decoration-color: blue; 
+}
+
+.tooltiptext {
+    font-size: 20px;
+    visibility: hidden;
+    position: absolute;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 5px 10px;
+    border-radius: 6px;
+    transform: translateX(-50%) translateY(-100%);
+    white-space: normal;
+    z-index: 1000;
+    display: inline-block;
+    width: 500px;
+    top: auto;
+    bottom: auto;
+}
+

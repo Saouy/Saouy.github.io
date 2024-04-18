@@ -1,0 +1,16 @@
+.image-slider {
+    width: 100%; 
+    height: 300px; 
+    overflow: hidden;
+}
+
+.image-slide {
+    width: 50%;
+    height: 100%;
+    background-size: cover; 
+    background-position: center;
+}
+
+.image-slide:first-child {
+    display: block; 
+}

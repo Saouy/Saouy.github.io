@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的家乡</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div class="box">
+        <h1>我的家乡————南京</h1>
+    </div>
+    <div class="nav">
+        <a href="name.html">名称简介</a>
+        <a href="geography.html">地理特点</a>
+        <a href="economy.html">经济方面</a>
+        <a href="culture.html">文化方面</a>
+    </div>
+    <div class="pic">
+        <img src="image/2.jpg" alt="">
+        <img src="image/0.jpg" alt="">
+        <img src="image/1.jpg" alt="">
+        <a href="#" class="prev">&lt;</a>
+        <a href="#" class="next">&gt;</a>
+    </div>
+
+    <script>
+        var currentIndex = 0;
+        var images = document.querySelectorAll('.pic img');
+        var prevBtn = document.querySelector('.prev');
+        var nextBtn = document.querySelector('.next');
+
+        function showImage(index) {
+            images[currentIndex].style.display = 'none';
+            currentIndex = (index + images.length) % images.length;
+            images[currentIndex].style.display = 'block';
+        }
+
+        prevBtn.addEventListener('click', function (event) {
+            event.preventDefault();
+            showImage(currentIndex - 1);
+        });
+
+        nextBtn.addEventListener('click', function (event) {
+            event.preventDefault();
+            showImage(currentIndex + 1);
+        });
+
+
+        images[currentIndex].style.display = 'block';
+    </script>
+</body>
+
+</html>

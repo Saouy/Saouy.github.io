@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>name</title>
+    <link rel="stylesheet" href="mouse.css">
+    <link rel="stylesheet" href="name.css">
+    <link rel="stylesheet" href="background.css">
+    <link rel="stylesheet" href="feedback.css">
+</head>
+<body>
+<div class="center">
+    <h1>名称简介</h1>
+    <P>南京市，简称“宁”，别称金陵、建业、建康、江宁。是中华人民共和国江苏省省会、副省级市，东部地区重要的中心城市，长三角核心城市，中国综合性交通和通信枢纽城市以及全国科教中心城市之一，中国人民解放军东部战区司令部驻地。 地处长江下游沿岸，位于江苏省西南部，是长江下游和长三角城市群重要产业城市，江苏省的政治、经济、科教、文化、信息中心，先进制造业基地，长江三角洲经济圈中心重要的经济城市，也是全省重要的金融、文化、科教城市及交通枢纽，南京都市圈重要核心城市。</P>
+    <p>全市下辖11个区，总面积6582.31平方公里，南京为政治文化名城，有2,500多年建城史和前后近500年建都史，先后有东吴、东晋、南朝宋、齐、梁、陈，南唐、明朝、太平天国、中华民国等朝代或政权定都于此，故有“六朝古都”、“十朝都会”之称。历史上南京长期是中国南方的政治文化中心，亦长期被视为华夏之正朔所在，为中国首批 <a href="name1.html" class="tooltip hover-target">国家历史文化名城<span class="tooltiptext">国家历史文化名城由中华人民共和国国务院确定及公布，是于1982年根据北京大学侯仁之、建设部郑孝燮和故宫博物院单士元提议而建立的一种文物保护机制。《中华人民共和国文物保护法》规定：保存文物特别丰富并且具有重大历史价值或者革命纪念意义的城市，由国务院核定公布为历史文化名城。</span></a>。</p>
+    <div class="image-slider">
+        <div class="image-slide" style="background-image: url('image/a.jpg');"></div>
+        <div class="image-slide" style="background-image: url('image/b.jpg');"></div>
+        <div class="image-slide" style="background-image: url('image/c.jpg');"></div>
+        <div class="image-slide" style="background-image: url('image/d.jpg');"></div>
+        <div class="image-slide" style="background-image: url('image/e.jpg');"></div>
+    </div>
+    <div class="slider-buttons">
+        <button onclick="changeSlide(0)">1</button>
+        <button onclick="changeSlide(1)">2</button>
+        <button onclick="changeSlide(2)">3</button>
+        <button onclick="changeSlide(3)">4</button>
+        <button onclick="changeSlide(4)">5</button>
+    </div>
+    
+    <div id="feedbackButton" onclick="toggleFeedbackOptions()">意见反馈</div>
+<div id="feedbackOptions" style="display: none;">
+    <ul>
+        <li onclick="showAlert('like')">点赞</li>
+        <li onclick="showAlert('dislike')">差评</li>
+        <li onclick="provideOpinion()">提供意见</li>
+    </ul>
+</div>
+
+</div>
+    <script src="mouse.js"></script>
+    <script src="name.js"></script>
+    <script src="feedback.js"></script>
+</body>
+</html>

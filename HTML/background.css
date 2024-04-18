@@ -1,0 +1,16 @@
+body, html {
+    height: 100%; 
+    margin: 0; 
+    display: flex;
+    flex-direction: column; 
+}
+
+.center {
+    background-color: rgba(211, 229, 244, 0.979);
+    margin-left: auto;
+    margin-right: auto;
+    width: calc(100% - 440px); 
+    flex-grow: 1; 
+    padding-left: 80px;
+    padding-right: 80px;
+}
